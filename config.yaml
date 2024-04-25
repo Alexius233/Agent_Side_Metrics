@@ -1,0 +1,26 @@
+
+model_path: /yuanzichen/HF/Llama2ChatHF
+
+E_Agent_config:
+  Agent_name: Evaluater
+  query_wrapper_prompt: '{query_str} [/INST]'
+  context_window: 4096
+  max_new_tokens: 512
+
+I_Agent_config:
+  Agent_name: ItemAnalyst
+  query_wrapper_prompt: '{query_str} [/INST]'
+  context_window: 4096
+  max_new_tokens: 512
+
+U_Agent_config:
+  Agent_name: UserAnalyst
+  query_wrapper_prompt: '{query_str} [/INST]'
+  context_window: 4096
+  max_new_tokens: 512
+
+max_conv_turns: 4
+
+data_path:
+  path1: path/to/1
+  path2: path/to/2
